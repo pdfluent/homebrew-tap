@@ -1,0 +1,33 @@
+{
+    "version": "1.1.2",
+    "description": "PDFluent, a desktop PDF editor that works offline",
+    "homepage": "https://pdfluent.com",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://pdfluent.com/license"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://pdfluent.com/releases/1.1.2/PDFluent_1.1.2_x64_en-US.msi",
+            "hash": "c9bcde8637fbe91e7195b98ffddd9cd3523f00388a01f995c00e3a96dfa2ea35"
+        }
+    },
+    "extract_dir": "PFiles\\PDFluent",
+    "shortcuts": [
+        [
+            "pdfluent-desktop.exe",
+            "PDFluent"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pdfluent.com/download/",
+        "regex": "releases/([\\d.]+)/PDFluent_[\\d.]+_x64_en-US\\.msi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pdfluent.com/releases/$version/PDFluent_$version_x64_en-US.msi"
+            }
+        }
+    }
+}
