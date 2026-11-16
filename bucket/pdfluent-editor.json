@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://pdfluent.com/releases/$version/PDFluent_$version_x64_en-US.msi"
+                "url": "https://pdfluent.com/releases/$version/PDFluent_${version}_x64_en-US.msi"
             }
         }
     }
